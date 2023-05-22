@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ADRAR HTML TP4 Page Web Complète</title>
+</head>
+<body>
+    <header>
+        <h1>Un gros titre H1</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="">Galerie</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Le formulaire</legend>
+                <div>
+                    <label for="name">Nom : <span class="redStar">*</span></label>
+                    <input type="text" name="name" id="name" placeholder="Exemple : John" required minlength="2" maxlength="20">
+                </div>
+                <div>
+                    <label for="email">Courriel : <span class="redStar">*</span></label>
+                    <input type="email" name="email"  placeholder="Exemple : John@doe.com" id="email">
+                </div>
+                <div>
+                    <label for="commentaire">Laissez un commentaire :</label>
+                    <br>
+                    <textarea name="comment" id="comment" cols="70" rows="7">Votre commentaire ici</textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="copySend" id="copySend" checked>
+                    <label for="copySend">Envoyer une copie par Courriel ?</label>
+                </div>
+                <div>
+                    <input type="button" value="Envoyer">
+                    <input type="button" value="Effacer">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="">Lien 1</a>
+            </li>
+            <li>
+                <a href="">Lien 2</a>
+            </li>
+            <li>
+                <a href="">Lien 3</a>
+            </li>
+            <li>
+                <a href="">Lien 4</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
