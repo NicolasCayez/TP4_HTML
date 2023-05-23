@@ -9,17 +9,20 @@
 </head>
 <body>
     <header>
+        <!-- Bannière et titre -->
+        <div class="banniere"></div>
         <h1>Un gros titre H1</h1>
+        <!-- Navigation -->
         <nav>
             <ul>
                 <li>
                     <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="#blog">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="">Galerie</a>
+                    <a href="galerie.html">Galerie</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -27,13 +30,15 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Corps de la page -->
     <section>
+        <!--  -->
         <form action="" method="post">
             <fieldset>
                 <legend>Le formulaire</legend>
                 <div>
-                    <label for="name">Nom : <span class="redStar">*</span></label>
+                    <!-- Ici l'étoile qui doit être rouge est contenue dans un <span> et une classe pour changer sa couleur dans le css -->
+                    <label for="name">Nom : <span class="redStar">*</span></label> 
                     <input type="text" name="name" id="name" placeholder="Exemple : John" required minlength="2" maxlength="20">
                 </div>
                 <div>
@@ -57,6 +62,7 @@
         </form>
     </section>
 
+        <!-- Le footer avec 4 liens vides -->
     <footer>
         <ul>
             <li>

@@ -1,39 +1,65 @@
+/* Choix de la largeur de toute la page. On aurait pu laisser le body et le footer sans
+spécifier de taille mais le rendu aurait été trop étoiré. question de goût ici pour teste
+les placements et les mardes j'ai préféré limiter à 800 pixels.
+Les marges auto permettent de centrer le tout*/
 header, body, footer{
     width:800px;
-    height:200px;
     margin: auto;
 }
-
+/* Choix du dégradé de couleurs pour le fond */
 body{
     background-image: radial-gradient(circle at top, #CCDAE0,#EDF2F4)
 }
-
+/* centrage du texte dans le header */
 header{
     text-align: center;
 }
-
+/* Alignement à droite du footer */
 footer{
     text-align: end;
 }
-
+/* dimensionnement de la bannière et ajustement de l'image qui était bien plus grande */
+.banniere{
+    background-image: url(images/7.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 200px;
+}
+/* titre h1 en rouge, un peu plus gros */
 h1{
     color:#EF233C;
     font-size: 3em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+/* titre h2 au centre */
+h2{
+    text-align: center;
+}
+/* titre h3 un peu plus gros, en gras et souligné */
 h3{
     color:#2B2D42;
     font-size: 2em;
     font-weight: bold;
     text-decoration: dotted underline;
 }
-
+/* Encadrement des articles, centrage du texte, avec marges intérieures et extérieures
+ajout d'ombre pour détacher du fond*/
 article{
     border: solid 1px;
+    border-radius: 20px;
     padding: 50px;
+    margin:30px;
+    text-align: center;
+    box-shadow: 5px 5px 5px grey;
 }
-
+/* justification des paragraphes des articles avec retrait en première ligne de 40 pixels */
+article p{
+    text-align: justify;
+    text-indent: 40px;
+}
+/* Calibrage des images hors galerie qui sera codifié à part
+le display block permet de centrer l'image avec margin auto*/
 img{
     max-width: 200px;
     max-height: 100px;
@@ -42,23 +68,43 @@ img{
     margin-right: auto;
     border: solid 2px;
 }
-
+/* retrait des puces des listes */
 ul{
     list-style-type: none;
 }
-
+/* comportement des liens */
 a:link{
     color:#D90429;
 }
-
 a:visited{
     color:grey;
 }
-
 a:hover{
     color:#2B2D42;
 }
-
+/* mise en rouge des étoiles qui sont dans les span */
 .redStar{
     color:red;
+}
+/* Mise en page de la galerie en flexbox avec marge auto et largeur identique au body */
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 800px;
+}
+/* mise en forme des éléments de la galerie contenant les images pour un format de 2 images par ligne
+peu importe la taille des images */
+.galerie div{
+    width: 380px;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10%;
+    align-items: center;
+}
+/* dimensionnement des images avec ajout d'ombre */
+.galerie div img{
+    max-width: 350px;
+    max-height: 150px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
